@@ -1,7 +1,6 @@
 library(shiny)
 
 data(mtcars)
-## fit <- lm(mpg ~ I(wt - mean(wt)), data = mtcars)
 fit <- lm(mpg ~ wt, data = mtcars)
 
 shinyServer(
